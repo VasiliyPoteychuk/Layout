@@ -1,0 +1,82 @@
+section.GPU{
+    background: url(/assets/img/Background.png);
+    background-repeat: no-repeat;
+    height: 797px;
+    width: 100%;
+    position: relative;
+    left: 160px;
+    padding-top: 184px;
+    p, h2, div.button-group{
+        margin-left: 185px;
+    }
+    p{
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 34px;
+        margin-bottom: 0;
+        // &:first-child{
+        //     margin-top: 200px;
+        // }
+        &.text-secondary{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 160%;
+            opacity: 0.6;
+            width: 600px;
+        }
+    }
+    h2{
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 48px;
+        line-height: 68px;
+        width: 500px;
+        color: $secondary1;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    div.button-group{
+        display: flex;
+        gap: 65px;
+        margin-top: 94px;
+        margin-bottom: 183px;
+        button{
+            width: 252px;
+            height: 44px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $secondary1;
+            background-color: inherit;
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 26px;
+            border-radius: 5px;
+            &:hover{
+                cursor: pointer;
+                opacity: 0.6;
+            }
+            &:first-child{
+                background-color: #9B7A3E;
+                &::after{
+                    content: "→";
+                    margin-left: 27px;
+                    width: 31px;
+                    height: 20px;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+            &:last-child{
+                border: 1px solid $secondary1;
+            }
+        }
+    }
+}
