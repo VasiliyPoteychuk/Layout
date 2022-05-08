@@ -100,15 +100,18 @@ section.powered{
         margin: 39px 0 19px 0;
         display: flex;
         align-items: center;
-        &::after{
-            content: "Learn more →";
+        a{
             font-family: 'Roboto';
             font-style: normal;
             font-weight: 500;
             font-size: 24px;
             line-height: 28px;
-            color: $primary1;
+            color: $primary3;
             margin-left: 35px;
+            &::after{
+                content: "→";
+                margin-left: 10px;
+            }
         }
     }
     p{
@@ -189,6 +192,160 @@ section.design{
             position: absolute;
             top: -30px;
             left: 520px;
+        }
+        
+    }
+}
+section.groundbreaking{
+    margin-left: 180px; 
+    margin-top: 100px;
+    background: url(/assets/img/NvidiaTitanv.png);
+    background-position-x: right;
+    // background-position-y: -60%;
+    background-repeat: no-repeat;
+   div.breaking-first{
+       margin-left: 365px;
+       p{
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 48px;
+        line-height: 70px;
+        color: $secondary1;
+        margin: 0;
+        span{
+            display: block;
+            width: 600px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 160%;
+            color: $secondary1;
+            opacity: 0.6;
+           }
+       }
+      
+   }
+   div.breaking-second{
+       background-color: rgba(255, 255, 255, 0.1);
+       border-radius: 20px;
+       width: max-content;
+       padding-left: 200px;
+       position: relative;
+       left: -200px;
+       margin-top: 45px;
+
+       p{
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 35px;
+        color: $secondary1;  
+        margin: 0;      
+       }
+       div.bsi{
+           display: grid;
+           grid-template-columns: repeat(2, 250px);
+           grid-template-rows: repeat(2, 1fr);
+           span{
+                display: block;
+                width: 250px;
+                font-family: 'Heebo';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 26px;
+                color: $secondary1;        
+                opacity: 0.6;
+           }
+       }
+   }
+   div.breaking-third{
+       margin-top: 240px;
+       display: flex;
+       gap: 138px;
+       padding-bottom: 230px;
+       
+       div.dti{
+           display: flex;
+           flex-direction: column;
+           p{
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 48px;
+            line-height: 70px;
+            color: $secondary1;
+            margin: 0;
+           }
+           span{
+               display: block;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: $secondary1;
+            opacity: 0.6;
+            width: 350px;
+            margin: 10px 0 10px 0;
+
+            }
+            a{
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 28px;
+                color: $primary3;
+                &::after{
+                    content: "→";
+                    margin-left: 10px;
+                }
+            }
+       }
+   }
+}
+section.gallery{
+    margin-top: 200px;
+    background: url(/assets/img/Design.png);
+    background-repeat: no-repeat;
+    margin-left: 180px;
+    h2{
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 64px;
+        line-height: 94px;
+        color: $secondary1;
+        padding-top: 40px;
+        
+    }
+    div.gallery-img{
+        display: flex;
+        align-items: center;
+        gap: 56px;
+        div.img-second{
+            display: flex;
+            align-items: center;
+            &::after{
+                content: ">";
+                color: $secondary1;
+                font-size: 40px;
+                margin-left: 10px;
+                &:hover{
+                    opacity: 0.6;
+                }
+
+            }
+            &::before{
+                content: "<";
+                color: $secondary1;
+                font-size: 40px;
+                margin-right: 10px;
+            }
         }
         
     }
