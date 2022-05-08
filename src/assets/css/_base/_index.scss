@@ -112,6 +112,10 @@ section.powered{
                 content: "→";
                 margin-left: 10px;
             }
+            &:hover{
+                color: $primary2;
+                cursor: pointer;
+            }
         }
     }
     p{
@@ -267,7 +271,6 @@ section.groundbreaking{
        display: flex;
        gap: 138px;
        padding-bottom: 230px;
-       
        div.dti{
            display: flex;
            flex-direction: column;
@@ -303,6 +306,10 @@ section.groundbreaking{
                 &::after{
                     content: "→";
                     margin-left: 10px;
+                }
+                &:hover{
+                    color: $primary2;
+                    cursor: pointer;
                 }
             }
        }

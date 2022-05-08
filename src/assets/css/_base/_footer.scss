@@ -16,24 +16,28 @@ footer{
         text-transform: uppercase;
         opacity: 0.8;
     }
-    ul{
-        padding: 0;
-        li{
-            a{
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 12px;
-                line-height: 160%;
-                color: $secondary1;
-                opacity: 0.4;
-            }
-            
-        }
-    }
     div.footer-left{
         display: flex;
-       gap: 86px;
+        gap: 86px;
+        ul{
+            padding: 0;
+            li{
+                a{
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 160%;
+                    color: $secondary1;
+                    opacity: 0.4;
+                    &:hover{
+                        opacity: 1;
+                        cursor: pointer;
+                    }
+                }
+                
+            }
+        }
     }
     div.footer-right{
         text-align: end;
@@ -42,6 +46,14 @@ footer{
             display: flex;
             gap: 33px;
             justify-content: flex-end;
+            i{
+                svg:hover{
+                    path{
+                    fill-opacity: 1;
+                    cursor: pointer;
+                    }
+                }
+            }
         }
         p{
             font-family: 'Roboto';
