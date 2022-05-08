@@ -156,6 +156,7 @@ section.powered{
 section.design{
     background: url(/assets/img/Design.png);
     background-repeat: no-repeat;
+    margin-left: 180px;
     h3{
         font-family: 'Heebo';
         font-style: normal;
@@ -163,9 +164,12 @@ section.design{
         font-size: 48px;
         line-height: 70px; 
         color: $secondary1; 
+        padding-top: 50px;
         
     }
     div.characteristics{
+        margin-left: 136px;
+        position: relative;
         p{
             font-family: 'Heebo';
             font-style: normal;
@@ -181,5 +185,11 @@ section.design{
             }
             
         }
+        img{
+            position: absolute;
+            top: -30px;
+            left: 520px;
+        }
+        
     }
 }
