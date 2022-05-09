@@ -20,8 +20,12 @@ ul{
     list-style: none;
 }
 @media (max-width: 480px){
-    .page-wrapper{
-        width: 480px;
+    body{
         margin: 0;
+    
+        .page-wrapper{
+            width: 480px;
+            margin: 0;
+        }
     }
 }

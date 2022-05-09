@@ -46,6 +46,9 @@ section.GPU{
         color: $secondary1;
         margin-top: 20px;
         margin-bottom: 20px;
+        sup{
+            display: none;
+        }
     }
     div.button-group{
         display: flex;
@@ -358,15 +361,46 @@ section.gallery{
     }
 }
 @media (max-width: 480px){
-    body{
-        margin: 0;
-    }
     section.line{
         display: none;
     }
-    // section.GPU{
-    //     display: none;
-    // }
+    section.GPU{
+        background: none;
+        height: max-content;
+        left: 0;
+        margin: 140px 12px 0 12px;
+        padding: 0;
+        p, h2, div.button-group{
+        margin-left: 0;
+        }
+        p{
+            font-size: 17.0667px;
+            line-height: 188%;
+            &.text-secondary{
+                font-size: 14px;
+                line-height: 160%;
+                width: 73%;
+            }
+        }
+        h2{
+            font-size: 34.1333px;
+            line-height: 183.5%;
+            width: 80%;
+            sup{
+                display: inline;
+            }
+        }
+        div.button-group{
+            gap: 30px;
+            margin-top: 90px;
+            button{
+                font-size: 18px;
+                line-height: 26px;
+                width: 210px;
+                height: 39px;
+            }
+        }
+    }
     // section.powered{
     //     display: none;
     // }
