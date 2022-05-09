@@ -321,7 +321,7 @@ section.groundbreaking{
 }
 section.gallery{
     margin-top: 200px;
-    background: url(/assets/img/Design.png);
+    background: url(/assets/img/Gallery.png);
     background-repeat: no-repeat;
     margin-left: 200px;
     position: relative;
@@ -343,6 +343,7 @@ section.gallery{
         div.img-second{
             display: flex;
             align-items: center;
+            gap: 25px;
             &::after{
                 content: ">";
                 color: $secondary1;
@@ -512,7 +513,32 @@ section.gallery{
             }
         }
     }
-    // section.gallery{
-    //     display: none;
-    // }
+    section.gallery{
+        margin: 0;
+        top: -200px;
+        background-size: 250px;
+        background-position: 6% 6%;
+        h2{
+            font-size: 24px;
+            line-height: 35px;
+            margin-left: 15px;
+        }
+        div.gallery-img{
+            img.secret{
+                display: none;
+            }
+            div.img-second{
+                gap: 10px;
+                width: 100%;
+                position: relative;
+                justify-content: space-between;
+                
+                img{
+                    width: 121px;
+                    height: 121px;
+                }
+                
+            }
+        }
+    }
 }
