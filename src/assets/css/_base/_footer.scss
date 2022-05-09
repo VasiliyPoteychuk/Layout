@@ -1,6 +1,6 @@
 footer{
     display: flex;
-    justify-content: space-between;
+    gap: 86px;
     padding-left: 200px;
     border-top: 0.5px solid rgba(223, 194, 140, 0.5);
     position: relative;
@@ -16,9 +16,8 @@ footer{
         text-transform: uppercase;
         opacity: 0.8;
     }
-    div.footer-left{
-        display: flex;
-        gap: 86px;
+    div{
+       
         ul{
             padding: 0;
             li{
@@ -38,38 +37,90 @@ footer{
                 
             }
         }
-    }
-    div.footer-right{
-        text-align: end;
-        margin-right: 100px;
-        span{
-            display: flex;
-            gap: 33px;
-            justify-content: flex-end;
-            i{
-                svg:hover{
-                    path{
-                    fill-opacity: 1;
-                    cursor: pointer;
+        &.footer4{
+            margin-left: 246px;
+            text-align: end;
+            span{
+                display: flex;
+                gap: 33px;
+                justify-content: flex-end;
+                i{
+                    svg:hover{
+                        path{
+                        fill-opacity: 1;
+                        cursor: pointer;
+                        }
                     }
                 }
             }
-        }
-        p{
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 14px;
-            color: $secondary1;
-            opacity: 0.8;
-            margin-top: 29px;
+            p{
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+                color: $secondary1;
+                opacity: 0.8;
+                margin-top: 29px;
+            }
         }
     }
+    
 }
 @media (max-width: 480px){
     footer{
         width: 480px;
-        display: none;
+        padding-left: 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, auto);
+        gap: 0;
+        h4{
+            font-size: 18px;
+            line-height: 21px;
+            margin: 15px 0;
+        }
+        div{
+            width: 60%;
+        }
+        div.footer1{
+            grid-column: 1/2;
+            grid-row: 1/4;
+        }
+        div.footer2{
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+        div.footer3{
+            grid-column: 2/3;
+            grid-row: 2/3;
+            h4{
+                margin-top: 0;
+            }
+        }
+        div.footer4{
+            margin-left: 0;
+            grid-column: 2/3;
+            grid-row: 3/4;
+            span{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+            }
+            
+            h4,p{
+                display: none;
+            }
+        }
+        ul{
+            margin: 0;
+            li{
+                margin: 10px 0;
+                a{
+                    font-size: 14px;
+                    line-height: 220%;
+                }
+            }
+        }
     }
 }
