@@ -9,7 +9,7 @@ section.line{
     z-index: 50;
 }
 section.GPU{
-    background: url(/assets/img/Background.png);
+    background-image: url(/assets/img/Background.png);
     background-repeat: no-repeat;
     height: 600px;
     width: 100%;
@@ -165,7 +165,7 @@ section.powered{
     }
 }
 section.design{
-    background: url(/assets/img/Design.png);
+    background-image: url(/assets/img/Design.png);
     background-repeat: no-repeat;
     margin-left: 180px;
     h3{
@@ -207,9 +207,8 @@ section.design{
 section.groundbreaking{
     margin-left: 180px; 
     margin-top: 100px;
-    background: url(/assets/img/NvidiaTitanv.png);
+    background-image: url(/assets/img/NvidiaTitanv.png);
     background-position-x: right;
-    // background-position-y: -60%;
     background-repeat: no-repeat;
    div.breaking-first{
        margin-left: 365px;
@@ -321,7 +320,7 @@ section.groundbreaking{
 }
 section.gallery{
     margin-top: 200px;
-    background: url(/assets/img/Gallery.png);
+    background-image: url(/assets/img/Gallery.png);
     background-repeat: no-repeat;
     margin-left: 200px;
     position: relative;
