@@ -9,6 +9,7 @@
     color: $secondary1;
     position: relative;
     overflow: hidden;
+    
 }
 
 a{
@@ -17,4 +18,10 @@ a{
 }
 ul{
     list-style: none;
+}
+@media (max-width: 480px){
+    .page-wrapper{
+        width: 480px;
+        margin: 0;
+    }
 }

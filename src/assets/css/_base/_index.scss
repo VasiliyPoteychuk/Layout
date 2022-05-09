@@ -357,3 +357,26 @@ section.gallery{
         
     }
 }
+@media (max-width: 480px){
+    body{
+        margin: 0;
+    }
+    section.line{
+        display: none;
+    }
+    // section.GPU{
+    //     display: none;
+    // }
+    // section.powered{
+    //     display: none;
+    // }
+    // section.design{
+    //     display: none;
+    // }
+    // section.groundbreaking{
+    //     display: none;
+    // }
+    // section.gallery{
+    //     display: none;
+    // }
+}
