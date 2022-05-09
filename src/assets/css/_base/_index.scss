@@ -472,9 +472,46 @@ section.gallery{
             }
         }
     }
-    // section.groundbreaking{
-    //     display: none;
-    // }
+    section.groundbreaking{
+        margin: 0;
+        background: none;
+
+        div.breaking-first{
+            margin: 0 0 0 15px;
+            p{
+                font-size: 24px;
+                line-height: 35px;
+                span{
+                    font-size: 14px;
+                    line-height: 160%;
+                    width: 85%;
+                }
+            }
+        }
+        div.breaking-second{
+            border-radius: none;
+            position: none;
+            margin-left: 15px;
+        }
+        div.breaking-third{
+            flex-direction: column-reverse;
+            gap: 35px;
+            margin: 70px 0 0 0;
+            padding-left: 15px;
+            img{
+                left: 10px;
+            }
+            div.dti{
+                p{
+                    font-size: 24px;
+                    line-height: 35px;
+                }
+                span{
+                    line-height: 160%;
+                }
+            }
+        }
+    }
     // section.gallery{
     //     display: none;
     // }
